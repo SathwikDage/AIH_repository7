@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-container">
+        <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+        <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+        <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+      </div>
+      <div class="time-btn-container">
+        <span id="time"></span>
+        <div class="btn-container">
+          <button id="btn-start" class="show">Start</button>
+          <button id="btn-pause" class="hide">Pause</button>
+          <button id="btn-reset" class="hide">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <header>
+      <h1>AI in HealthCare</h1>
+      <br />
+      <nav>
+        <ul>
+          <li>
+            <a href="#short">VSAQ's</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#long">LAQ's</a>
+          </li>
+        </ul>
+        <br />
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <article id="short">
+        <h2>1.What is Artificial Intelligence?</h2>
+        <div>
+          <p>
+            Artificial Intelligence (AI) refers to the development of computer
+            systems that can perform tasks that typically require human
+            intelligence. These tasks include learning, reasoning,
+            problem-solving, perception, language understanding, and even speech
+            recognition
+          </p>
+        </div>
+        <div>
+          <h2>2.List distinct categories of AI?</h2>
+          <p>
+            <span>Reactive Machines: </span>These are the most basic types of AI
+            that respond to current scenarios and react on it as per possible
+            best action. <br /><span>Limited Memory:</span>These AI systems can
+            store past experiences or some data for a short period of time.
+            <br /><span>Theory of Mind:</span> This is a more advanced type of
+            AI that has the ability to understand thoughts and emotions that
+            affect human behavior.<br />
+            <span>Self-awareness:</span> This is the final stage of AI, where AI
+            systems have their own consciousness and emotions.
+            <br />
+          </p>
+        </div>
+        <div>
+          <h2>3.What is Machine Learning?</h2>
+          <p>
+            Machine Learning (ML) is a subset of artificial intelligence (AI)
+            that focuses on the development of algorithms and statistical models
+            that enable computers to learn from data and make predictions or
+            decisions without being explicitly programmed. In essence, machine
+            learning involves creating systems that can automatically learn and
+            improve from experience.
+          </p>
+        </div>
+        <div>
+          <h2>4.What is Data Science?</h2>
+          <p>
+            Data Science is a multidisciplinary field that involves the
+            extraction of insights and knowledge from structured and
+            unstructured data. It combines various techniques, methods, and
+            tools from statistics, mathematics, computer science, and
+            domain-specific knowledge to analyze and interpret complex datasets.
+            The primary goal of data science is to derive valuable insights,
+            make data-driven decisions, and solve complex problems.
+          </p>
+        </div>
+        <div>
+          <h2>5.Define Natural Language Processing?</h2>
+          <p>
+            Natural Language Processing (NLP) is a branch of Artificial
+            Intelligence (AI) that focuses on the interaction between computers
+            and humans through natural language. <br /><span
+              >Speech Recognition:</span
+            >
+            Converting voice data into text data1. <br /><span
+              >Natural Language Understanding:</span
+            >
+            Comprehending the meaning of text or voice data1. <br /><span
+              >Natural Language Generation:</span
+            >
+            Producing text that is relevant to the given input
+          </p>
+        </div>
+        <div>
+          <h2>6.Explain how AI used in healthcare for diagnosis?</h2>
+          <p>
+            Artificial Intelligence (AI) is increasingly being used in
+            healthcare for diagnosis, and it holds great promise in helping
+            health care providers gain insights and improve health outcomes.
+            Here are some ways AI is used in healthcare for diagnosis:
+            <br />
+            <span>Clinical Decision Tools:</span> AI can assist medical
+            professionals in making more informed decisions about care by
+            analyzing a vast amount of patient. <br />
+            <span> Diagnostic and Imaging:</span> The greatest application of AI
+            in diagnostics so far has been in imaging. AI can assist in
+            detecting anomalies in images, such as lung nodules on CT scans or
+            abnormalities in breast.
+          </p>
+        </div>
+        <div>
+          <h2>7.What is Fragmented Data?</h2>
+          <p>
+            Data fragmentation refers to the condition where data is scattered
+            across various different systems and locations(just like poneglyphs
+            in one piece), such as clouds or on-premises. This fragmentation can
+            prevent organizations from achieving full visibility and control of
+            the data, and from maximizing the potential value of the data.
+            <br />
+            When data is fragmented, it can lead to several challenges: <br />
+            1.Inefficient use of computer capacity. <br />
+            2.Decreased data quality. <br />
+            3.Reduced operational efficiency.
+          </p>
+        </div>
+        <div>
+          <h2>8.What is Data and types of Data?</h2>
+          <p>
+            Data refers to raw facts, figures, or information that are processed
+            or manipulated to generate meaningful insights. <br />
+            <span>Structured Data:</span> This is data that adheres to a
+            pre-defined data model and is therefore straightforward to analyze.
+            Structured data is usually stored in databases. <br />
+            <span>Unstructured Data:</span>This is data that doesnt have a
+            pre-defined model or isnt organized in a pre-defined manner. It can
+            be textual or non-textual, and includes data like text, social media
+            posts, videos, photos, audio files, presentations, webpages, and
+            many more.
+          </p>
+        </div>
+        <div>
+          <h2>9.Define BigData,SmallData and MetaData?</h2>
+          <p>
+            <span>Big Data:</span> Big Data refers to large and diverse datasets
+            that grow in volume and complexity over time. It can be structured,
+            unstructured, or semi-structured. Big data often comes from data
+            mining and arrives in multiple formats. Its used in machine
+            learning, predictive modeling, and other advanced analytics to solve
+            business problems and make informed decisions. <br />
+            <span>Small Data:</span> Small data can be defined as small datasets
+            that are capable of impacting decisions in the present. It comprises
+            of definite and specific attributes of datasets, which can be used
+            to analyze current situations. Small data is simple enough to be
+            processed by a single machine or understood by an individual. Its
+            generally gathered using digital methods, but it can also be a
+            physical process. <br />
+            <span>Metadata:</span> Metadata is data that provides information
+            about other data. It helps to organize, find, and understand data.
+            Metadata includes details such as the source, type, owner, and
+            relationships to other data sets. It provides context for data,
+            making it easier to retrieve, manage, and use.
+          </p>
+        </div>
+        <div>
+          <h2>10.Explain Legacy Data?</h2>
+          <p>
+            Legacy data refers to information that is stored in outdated or
+            obsolete systems, formats, or technologies. This data was created
+            years ago and may not be actively used by an organization anymore.
+            However, it is often crucial for legal, regulatory, or historical
+            reasons. Examples of legacy data include customer records, financial
+            data, emails, documents, databases, spreadsheets, presentations, and
+            data stored on removable storage media which is no longer widely
+            used.
+          </p>
+        </div>
+        <div>
+          <h2>11.What is DataQuality and DataSecurity?</h2>
+          <p>
+            <span>Data Quality:</span> Data quality refers to the overall
+            utility of a dataset and its ability to be easily processed and
+            analyzed for other uses. It is an integral part of data governance
+            that ensures that your organizations data is fit for purpose. Data
+            quality dimensions include completeness, conformity, consistency,
+            accuracy, and integrity. <br />
+            <span>Data Security:</span> Data security is the process of
+            safeguarding digital information throughout its entire life cycle to
+            protect it from corruption, theft, or unauthorized access. It covers
+            everything—hardware, software, storage devices, and user devices;
+            access and administrative controls; and organizations policies and
+            procedures.
+          </p>
+        </div>
+        <div>
+          <h2>12.What is datasteward?</h2>
+          <p>
+            A data steward is a role within an organization that oversees the
+            quality and fitness for purpose of the organizations data assets,
+            including the metadata for those data assets. <br />
+            Data stewards have a specialist role that utilizes an organizations
+            data governance processes, policies, guidelines, and
+            responsibilities for administering the organizations entire data in
+            compliance with policy and/or regulatory obligations.
+          </p>
+        </div>
+        <br />
+        <hr />
+      </article>
+      <article id="long">
+        <div>
+          <h2>1.List and Explain distinctive categories of AI?</h2>
+          <p>
+            Artificial Intelligence (AI) refers to the development of computer
+            systems that can perform tasks that typically require human
+            intelligence. These tasks include learning, reasoning,
+            problem-solving, perception, language understanding, and even speech
+            recognition. <br />
+            <strong>Distinctive categories of ai:</strong> <br />
+            <span>Reactive Machines: </span>These are the most basic types of AI
+            that respond to current scenarios and react on it as per possible
+            best action. Such AI systems do not store memories or past
+            experiences for future action. IBMs Deep Blue system is an example
+            of reactive machines. <br /><span>Limited Memory:</span>These AI
+            systems can store past experiences or some data for a short period
+            of time. These machines can use stored data for a limited time
+            period only. Self-driving cars are one of the best examples of
+            Limited Memory systems1. <br /><span>Theory of Mind:</span> This is
+            a more advanced type of AI that has the ability to understand
+            thoughts and emotions that affect human behavior. Theory of Mind is
+            a major component of social cognition. To endow machines with
+            (limited) Theory of Mind capabilities, computer scientists will need
+            to work closely with psychiatrists, psychologists, and
+            neuroscientists.<br />
+            <span>Self-awareness:</span> This is the final stage of AI, where AI
+            systems have their own consciousness and emotions. It would mean
+            that the AI can not only perform tasks and process information but
+            also recognize itself as an independent entity with its unique
+            identity.<br />
+          </p>
+        </div>
+        <div>
+          <h2>2.List and explain Applications of AI in healthcare?</h2>
+          <p>
+            Here are some of the key applications of AI in healthcare: <br />
+            <span>Disease Diagnosis:</span> AI can help in diagnosing diseases
+            by analyzing medical images, patient records, and other data. It can
+            identify patterns and anomalies that might be missed by human eyes.
+            <br />
+            <span>Development of Treatment Protocol:</span> AI can analyze a
+            patients condition and suggest the most effective treatment plan. It
+            can take into account the patients medical history, current health
+            status, and other relevant factors. <br />
+            <span>New Drug Development: </span> AI can speed up the process of
+            drug discovery by analyzing vast amounts of data related to the
+            effects of various compounds. It can predict how a drug will
+            interact with the body and identify potential side effects. <br />
+            <span> Personalized Medicine:</span> AI can help in creating
+            personalized treatment plans for patients. It can analyze a patients
+            genetic information, lifestyle, and other factors to suggest
+            treatments that are most likely to be effective. <br /><span
+              >Robotic Surgery:</span
+            >
+            AI can assist surgeons during operations by providing real-time
+            information and reducing physical fluctuations. Robotic surgical
+            equipment outfitted with AI can help surgeons better perform
+            surgeries. <br />
+            <span>Managing Healthcare Data:</span> AI can help manage and
+            analyze large volumes of healthcare data, making it easier for
+            healthcare providers to make informed decisions. <br />
+            <span>Improving Patient Experience:</span> AI can be used to improve
+            the patient experience by providing personalized care and reducing
+            wait times. <br />
+            <span>Healthcare Administration:</span> AI can help streamline
+            administrative tasks in healthcare, such as scheduling appointments,
+            managing patient records, and billing. It can also help in
+            identifying and preventing healthcare fraud. <br /><span
+              >Public Health:</span
+            >
+            AI can be used to analyze public health data to identify trends and
+            predict outbreaks. <br /><span>Clinical Trials:</span> AI can help
+            in the design and execution of clinical trials, improving efficiency
+            and accuracy3.
+          </p>
+        </div>
+        <div>
+          <h2>3.What is BigData and 3V's of data?</h2>
+          <p>
+            Big Data refers to extremely large and diverse collections of
+            structured, unstructured, and semi-structured data that continues to
+            grow exponentially over time. These datasets are so huge and complex
+            in volume, velocity, and variety, that traditional data management
+            systems cannot store, process, and analyze them. Big Data is used in
+            machine learning, predictive modeling, and other advanced analytics
+            to solve business problems and make informed decisions. <br />
+            <span>Volume:</span> This refers to the amount of data. Big data
+            deals with data in large volumes that can reach unprecedented
+            heights. Its estimated that 2.5 quintillion bytes of data is created
+            each day. <br />
+            <span>Velocity:</span> This measures how fast the data is coming in.
+            Some data will come in real-time, whereas others will come in fits
+            and starts, sent to us in batches. <br />
+            <span>Variety:</span> This refers to the different types of data.
+            Data was once collected from one place and delivered in one format.
+            Now, it is being presented in non-traditional forms, like video,
+            text, pdf, and graphics on social media, as well as via tech such as
+            wearable devices.
+          </p>
+        </div>
+        <div>
+          <h2>
+            4.What is Fragmented Data and explain hurdles with fragmented data.
+          </h2>
+          <p>
+            Fragmented Data refers to the condition where data is scattered
+            across various different systems and locations, such as clouds or
+            on-premises. This fragmentation can prevent organizations from
+            achieving full visibility and control of the data, and from
+            maximizing the potential value of the data. <br />
+            When data is fragmented, it can lead to several challenges: <br />
+            <span>Inefficient use of computer capacity:</span> When data is
+            distributed across different silos, it can cause computer capacity
+            to be used inefficiently. <br />
+            <span>Difficulty in maintaining regulatory compliance:</span>
+            Without complete visibility into what data is being tracked, where
+            its being stored, and who has access to it, organizations can face
+            serious risks of being non-compliant with privacy laws and
+            regulations. <br />
+            <span>Decreased data quality:</span> Data fragmentation can impact
+            the accuracy, completeness, timeliness, accessibility, and
+            consistency of the data. <br />
+            <span>Reduced operational efficiency:</span> The need to manage and
+            coordinate multiple proprietary systems and user interfaces, each
+            requiring specialist understanding, can compromise operational
+            efficiency. <br />
+            <span>Increased storage costs:</span> Keeping large volumes of data
+            that are poorly or not exploited is quite costly. <br />
+            <span>Increased exposure to data breaches:</span> <br />
+            Fragmented data can sometimes escape data governance and security
+            strategies, consequences that also increase exposure to data
+            breaches. Data fragmentation is often accidental as organizations
+            store more and more information to benefit the business. However,
+            when teams no longer have complete visibility into their data,
+            fragmentation becomes a considerable challenge. For these reasons,
+            organizations are working to eliminate mass data fragmentation.
+          </p>
+        </div>
+        <div>
+          <h2>5.Explain in detail "Big Data Tool"?</h2>
+          <p>
+            Big Data tools are software utilities designed to analyze, process,
+            and extract information from extremely large datasets that
+            traditional data processing tools cannot handle. These tools help in
+            managing, storing, retrieving, and processing Big Data. They are
+            used in various sectors like healthcare, finance, retail, and more
+            to make informed decisions, predict trends, and improve operational
+            efficiency. <br />
+            Here are some popular Big Data tools: <br />
+            <span>Apache Hadoop:</span> Its a Java-based open-source platform
+            used to store and process big data. It is built on a cluster system
+            that allows the system to process data efficiently and let the data
+            run parallel. It can process both structured and unstructured data
+            from one server to multiple computers. <br />
+            <span>Apache Cassandra:</span> Its an open-source NoSQL distributed
+            database used to fetch large amounts of data. Its praised by many
+            tech companies due to its high scalability and availability without
+            compromising speed and performance. <br />
+            <span>Microsoft Azure:</span> Its a cloud computing service created
+            by Microsoft for building, testing, deploying, and managing
+            applications and services through Microsoft-managed data centers.
+            <br />
+            <span>Cloudera:</span> Its a software platform that provides an
+            enterprise-level data management solution. Its a unified platform
+            that allows data engineering, data warehousing, machine learning,
+            and analytics. <br />
+            <span>Tableau:</span> Its a data visualization tool that helps in
+            simplifying raw data into an easily understandable format. <br />
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <br />
+      <hr />
+      <a href="#">Back to Top.</a>
+    </footer>
+  </body>
+</html>
